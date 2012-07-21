@@ -19,8 +19,8 @@ useful constants (matches those of WiringPi):
 
 Then you can start setting up the pins and use them:
 
+    application:start(wpi),
     Pin = 4,
-    wpi:gpio_mode(?WPI_MODE_GPIO),
     wpi:pin_mode(Pin, ?WPI_OUTPUT),
     wpi:digital_write(Pin, ?WPI_HIGH),
 
