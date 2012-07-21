@@ -40,7 +40,7 @@ on_load() ->
       {error, _} -> "priv";
       Else -> Else
     end,
-    ok = erlang:load_nif(Path ++ "/wpi_drv", 0).
+    ok = erlang:load_nif(Path ++ "/wpi", 0).
 
 -spec pin_mode(wpi_pin_number(), wpi_pin_mode()) -> ok.
 pin_mode(_Pin, _Mode) ->
